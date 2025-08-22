@@ -1,0 +1,16 @@
+{
+  "name": "pwdlogbook-electron",
+  "version": "1.0.0",
+  "description": "Password Record Book App!",
+  "main": "index.js",
+  "scripts": {
+	  "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "weijunyi",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^30.1.0"
+  }
+}
