@@ -4,6 +4,8 @@ A simple password record book program, using Vue for the front end and PHP for t
 Requires support for PHP's pseudo-static feature. The PHP version should be 7.1 or above. It can be installed in any directory.Having good concealment properties
 需要支持php伪静态，php版本为7.1以上，可以安装在任意目录，拥有较好的隐蔽性
 
+进入app需要输入密码，服务器不保存密码，本地也不存储密码，服务器只保存加密后的文本
+
 ------------
 
 
