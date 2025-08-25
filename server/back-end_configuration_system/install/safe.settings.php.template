@@ -1,0 +1,18 @@
+<?php
+
+return array (
+  'useToken' => true,
+  'useCookie' => false,
+  'cookieTime' => 3600,
+  'logIp' => false,
+  'useVirtualPath' => false,
+  'virtualPath' => 'secure',
+  'onlyHttpsAccess' => false,
+  'restrictUa' => false,
+  'allowedUa' => '',
+  'restrictIp' => false,
+  'whitelistIp' => '',
+  'blacklistIp' => '',
+  'restrictUuid' => false,
+  'allowedUuid' => '',
+);

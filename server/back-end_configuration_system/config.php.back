@@ -1,0 +1,20 @@
+<?php
+$mysql_settings = [
+    'host' => "localhost",
+    'port' => 3306,
+    'user' => "root",
+    'password' => "root",
+    'database' => "app",
+    'table' => "anptable"
+];
+$app_settings = [
+    // 是否需要口令
+    'userToken' =>false,
+    'token' => "weijunyi",
+    // 是否限制UA
+    'limitClientUA' =>false,
+    'allowedClient' => ["client_Windows","client_Android"],
+    // 是否需要用指定的Url的part访问，例如'andwianxadaw2'是part，访问/abc需要通过/andwianxadaw2/abc
+    'useUrlPart' =>false,
+    'urlPart' => "andwianxadaw2"
+];

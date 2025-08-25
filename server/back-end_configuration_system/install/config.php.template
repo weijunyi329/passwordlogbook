@@ -1,0 +1,17 @@
+<?php
+$mysql_settings = [
+    'host' => "$$$host$$$",
+    'port' => $$$port$$$,
+    'user' => "$$$user$$$",
+    'password' => "$$$password$$$",
+    'database' => "$$$database$$$",
+    'table' => "$$$table$$$"
+];
+$app_settings = [
+    // 网站主页
+    'websiteUrl' => '$$$websiteUrl$$$',
+    'install_path'=>"$$$install_path$$$",
+    // 是否需要口令
+    'userToken' =>false,
+    'token' => '$$$token$$$'
+];
