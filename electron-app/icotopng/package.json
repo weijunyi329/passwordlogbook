@@ -1,0 +1,16 @@
+{
+  "name": "ico-to-png",
+  "version": "1.0.0",
+  "description": "Node.js native module to convert ICO to PNG",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "node-addon-api": "^4.3.0"
+  },
+  "gypfile": true,
+  "devDependencies": {
+    "node-gyp": "^7.1.2"
+  }
+}

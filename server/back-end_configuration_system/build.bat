@@ -1,6 +1,6 @@
 ::npm run build
 
-set output=..\test
+set output=..\build
 @echo off
 
 if exist "%output%\" (

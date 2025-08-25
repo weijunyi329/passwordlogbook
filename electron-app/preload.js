@@ -11,5 +11,6 @@ contextBridge.exposeInMainWorld('electronAPI', {
     encrypt: (strToEncrypt,pwd) => ipcRenderer.sendSync('encrypt', strToEncrypt,pwd),
     downloadAndConvertIcon: (parseOriginUrl, parseUrlhost, uploadAddr) =>
         ipcRenderer.invoke('download-and-convert-icon', parseOriginUrl, parseUrlhost, uploadAddr),
-    clientInfo: ()=>ipcRenderer.sendSync('clientInfo')
+    clientInfo: ()=>ipcRenderer.sendSync('clientInfo'),
+    getUUID: ()=>ipcRenderer.sendSync('getUUID')
 })

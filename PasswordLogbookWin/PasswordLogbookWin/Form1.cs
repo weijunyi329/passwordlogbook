@@ -91,8 +91,8 @@ namespace PasswordLogbookWin
                 Close();
                 return;
             }
-            webView21.Source = new Uri($"http://127.0.0.1:{availablePort}/index.html");
-            //webView21.Source = new Uri($"http://127.0.0.1:5173/index.html");
+            //webView21.Source = new Uri($"http://127.0.0.1:{availablePort}/index.html");
+            webView21.Source = new Uri($"http://127.0.0.1:5173/index.html");
 #else
     
             webView21.CoreWebView2.ContextMenuRequested += CoreWebView2_ContextMenuRequested; //禁用右键

@@ -81,7 +81,7 @@
 </template>
 
 <script setup>
-import { ref, reactive } from 'vue'
+import {ref, reactive, watch} from 'vue'
 import {GlobalObjVar} from "@/global.js";
 import {appAlert, client_function} from "@/services/client_function.js";
 
@@ -276,7 +276,7 @@ const removeAccount = (index) => {
   }
 }
 
-const close = () => {
+const resetForm = () => {
   // 重置表单
   Object.assign(formData, {
     title: '',
@@ -288,7 +288,20 @@ const close = () => {
       { username: '', password: '' }
     ]
   })
-  emit('close')
+}
+
+// 使用 getter 函数来监听 props.visible 的变化
+// 如果关闭的时候，清空窗口
+watch(() => props.visible, (newValue, oldValue) => {
+  if (oldValue === true && newValue === false) {
+    //console.log('close变量从true变为了false');
+    resetForm();
+  }
+});
+
+const close = () => {
+ // resetForm()
+  emit('close');
 }
 
 const confirm = () => {
@@ -314,6 +327,7 @@ const confirm = () => {
   }
   
   emit('confirm', { ...formData })
+  //resetForm()
 }
 </script>
 

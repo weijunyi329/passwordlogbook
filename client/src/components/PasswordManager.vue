@@ -321,6 +321,7 @@ const handleAddApp = async (appData) => {
     console.error('添加密码项失败:', error)
     appAlert('添加失败: ' + error.message)
   }
+
 }
 
 const handleEditApp = async (appData) => {

@@ -9,7 +9,7 @@ if (!isset($relativePath)){
 }
 
 include_once $relativePath.'Utils.php';
-include_once $relativePath.'Common.php';
+include_once $relativePath.'common.php';
 class SecurityHandler {
     private $safeSettings;
     private $realPath;

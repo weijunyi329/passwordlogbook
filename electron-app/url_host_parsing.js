@@ -7,6 +7,7 @@ const os = require('os');
 // const sharp =require("sharp");
 const UserAgent =require("./ua.js");
 const icotopng =require("./icotopng.node");
+const UUID = require("./UUID");
 class  URLHostParsing{
     static downloadFile(url, path, maxBytes, timeout){
         return new Promise((resolve, reject) => {
@@ -181,6 +182,7 @@ class  URLHostParsing{
                 path: urlObj.pathname + (urlObj.search || ''),
                 method: 'POST',
                 headers: {
+                    'Uuid':UUID,
                     'Content-Type': `multipart/form-data; boundary=${boundary}`,
                     'Content-Length': Buffer.byteLength(postData),
                     'User-Agent': UserAgent()
